@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+html, body {
+    margin: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.menu > img {
+    position: absolute;
+    left: .7rem;
+    top: .5rem;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+}
+
+@media (80rem <= width) {
+    .container > img {
+        height: 50rem;
+    }
+}
+
+@media (70rem <= width < 80rem) {
+    .container > img {
+        height: 40rem;
+    }
+}
+
+
+@media (50rem <= width < 70rem) {
+    .container > img {
+        height: 30rem;
+    }
+}
+
+@media (width < 50rem) {
+    .container > img {
+        height: 20rem;
+    }
+}
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #D3D3D3;
+}
+
+.menu {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    flex-wrap: wrap;
+
+    padding: 0.8rem 1rem 0.8rem;
+}
+
+.links-inline {
+    display: flex;
+    gap: 1rem;
+
+    font-size: large;
+    font-weight: bold;
+}
+
+.links {
+    display: none;
+}
+
+/* .links::before {
+    content: "Home";
+} */
+
+/* .links::after {
+    content: "Contacts";
+} */
+
+#burger-icon, #burger-checkbox {
+    display: none;
+}
+
+.bar {
+    width: 2rem;
+    height: 0.3rem;
+    margin: 0.2rem 0rem;
+    background-color: black;
+    transition: 0.4s;
+}
+
+#burger-checkbox:checked ~ #burger-icon .bar:nth-child(2) {
+    opacity: 0;
+}
+
+#burger-checkbox:checked ~ #burger-icon .bar:nth-child(1),
+#burger-checkbox:checked ~ #burger-icon .bar:nth-child(3) {
+    background-color: red;
+}
+
+#burger-checkbox:checked ~ #burger-icon .bar:nth-child(1) {
+    transform: rotate(45deg) translate(0.33rem, 0.33rem);
+}
+
+#burger-checkbox:checked ~ #burger-icon .bar:nth-child(3) {
+    transform: rotate(-45deg) translate(0.33rem, -0.33rem);
+}
+
+#burger-checkbox:checked ~ .links {
+    padding-bottom: 1rem;
+    width: 100%;
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+@media (width < 50rem) {
+    .links-inline {
+        visibility: hidden;
+    }
+
+    #burger-icon {
+        display: block;
+        cursor: pointer;
+    }
+
+    .menu > img {
+        left: .7rem;
+        top: .7rem;
+    }
+}

@@ -1,0 +1,10 @@
+.card {
+    padding: 1.5rem;
+    line-height: 1.4rem;
+    border-radius: .75rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card h2 {
+    margin-bottom: .5rem;
+}

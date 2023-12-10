@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Сборник стихов</title>
+    <link rel="stylesheet" href="../../shared/reset.css">
+    <link rel="stylesheet" href="../../shared/footer.css">
+    <link rel="stylesheet" href="../../shared/header.css">
+    <link rel="stylesheet" href="../../shared/basic_cards.css">
+    <link rel="stylesheet" href="auth.css">
+    <script src="auth.js" async></script>
+</head>
+<body>
+    <header>
+        <nav class="menu">
+            <img src="../../assets/logo.png" width="96" height="32">
+            <div class="links-inline">
+                <a href="../../index.html">Главная</a>
+                <a href="../about">О нас</a>
+                <a href="../basket">Корзина</a>
+                <a href="../auth/">Вход</a>
+            </div>
+    
+            <input id="burger-checkbox" type="checkbox">
+            <label id="burger-icon" for="burger-checkbox">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </label>
+            <div class="links">
+                <a href="../../index.html">Главная</a>
+                <a href="../about">О нас</a>
+                <a href="../basket">Корзина</a>
+                <a href="../auth/">Вход</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <div class="color"></div>
+            <div class="color"></div>
+            <div class="color"></div>
+            <div class="boxx"> 
+                <div class="square" style="--i:0;"></div>
+                <div class="square" style="--i:1;"></div>
+                <div class="square" style="--i:2;"></div>
+                <div class="square" style="--i:3;"></div>
+                <div class="square" style="--i:4;"></div>
+                <div class="container3">
+                    <div class="form">
+                        <h2>Логин</h2>
+                        <form>
+                            <div class="inputBox">
+                                <input type="text" placeholder="Почта">
+                            </div>
+                            <div class="inputBox">
+                                <input type="password" placeholder="Пароль">
+                            </div>
+                            <div class="inputBox">
+                                <button id="auth" type="button">Войти</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container-footer">
+            <div class="sec aboutus">
+                <h2>Автор сайта</h2>
+                <p>Омельяненко К. Д. ИКБО-20-22</p>
+                <nav class="nav-footer">
+                    <button class="social-button">
+                        <a href="https://www.youtube.com/" target="_blank"><img src="../../assets/yt.png" alt="YouTube" title="YouTube" style="display: block;"></a>
+                    </button> 
+                    <button class="social-button">
+                        <a href="https://https://ru.linkedin.com/" target="_blank"><img src="../../assets/vk.png" alt="in" title="in" style="display: block;"></a>
+                    </button> 
+                    <button class="social-button">
+                        <a href="https://web.telegram.org/k/" target="_blank"><img src="../../assets/tg.png" alt="Telegram" title="Telegram" style="display: block;"></a>
+                    </button> 
+                </nav>
+            </div>
+            <div class="sec quicklinks">
+                <h2>Быстрые ссылки</h2>
+                <ul>
+                    <li><a href="../../index.html">Главная</a></li>
+                    <li><a href="../../pages/about">О нас</a></li>
+                    <li><a href="../../pages/basket">Корзина</a></li>
+                    <li><a href="../../pages/auth">Вход</a></li>
+                </ul>
+            </div>
+            <div class="sec quicklinks">
+                <h2>Поэты</h2>
+                <ul>
+                    <li><a href="#">Есенин</a></li>
+                    <li><a href="#">Ахматова</a></li>
+                    <li><a href="#">Маяковский</a></li>
+                </ul>
+            </div>
+            <div class="sec contact">
+                <h2>Связаться с нами</h2>
+                <ul class="info">
+                    <li>
+                        <img width="32" height="32" src="../../assets/location.svg">
+                        <p>Москва, Мичуринский пр-кт, 12к2</p>
+                    <li> 
+                        <img width="32" height="32" src="../../assets/phone.svg">
+                        <a href="tel:+79876543210">+7 (987) 654-32-10</a>
+                    </li>
+                    <li>
+                        <img width="32" height="32" src="../../assets/mail.svg">
+                        <a href="mailto:example@email.com">example@email.com</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyrightText">
+            <p>Copyright © 2023 MIREA All Rights Reserved</p>
+        </div>
+    </footer>
+</body>
+</html>

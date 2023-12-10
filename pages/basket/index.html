@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Сборник стихов</title>
+    <link rel="stylesheet" href="../../shared/reset.css">
+    <link rel="stylesheet" href="../../shared/footer.css">
+    <link rel="stylesheet" href="../../shared/header.css">
+    <link rel="stylesheet" href="../../shared/basic_cards.css">
+    <link rel="stylesheet" href="basket.css">
+    <script src="basket.js" async></script>
+</head>
+<body>
+    <header>
+        <nav class="menu">
+            <img src="../../assets/logo.png" width="96" height="32">
+            <div class="links-inline">
+                <a href="../../index.html">Главная</a>
+                <a href="../about">О нас</a>
+                <a href="../basket">Корзина</a>
+                <a href="../auth/">Вход</a>
+            </div>
+    
+            <input id="burger-checkbox" type="checkbox">
+            <label id="burger-icon" for="burger-checkbox">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </label>
+            <div class="links">
+                <a href="../../index.html">Главная</a>
+                <a href="../about">О нас</a>
+                <a href="../basket">Корзина</a>
+                <a href="../auth/">Вход</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div id="basket" class="basket__container">
+            <h2 class="basket__title">Корзина</h2>
+            <button class="basket__add-button" style="visibility: hidden;">
+                <img width="32" height="32" src="../../assets/add.svg">
+            </button>
+            <button class="buy">Купить</button>
+            <button class="basket__clear-button">
+                <img class="basket__clear-button-img" width="32" height="32" src="../../assets/clear.svg">
+            </button>
+            <span class="basket__total"></span>
+            <div class="basket__sort">
+                <button class="basket__sort-asc">
+                    <img width="32" height="32" src="../../assets/sort-asc.svg">
+                </button>
+                <button class="basket__sort-desc">
+                    <img width="32" height="32" src="../../assets/sort-desc.svg"> 
+                </button>
+            </div>
+            <button class="basket__filter">
+                <img width="32" height="32" src="../../assets/filter.svg">
+            </button>
+        </div>
+
+        <div class="books">
+            <div class="card book">
+                <img src="../../../assets/esenin_book.webp" width="128" height="200">
+                <button>Купить сборник стихов</button>
+            </div>
+            <div class="card book">
+                <img src="../../../assets/akhmatova_book.webp" width="128" height="200">
+                <button>Купить сборник стихов</button>
+            </div>
+            <div class="card book">
+                <img src="../../../assets/mayakovsky_book.webp" width="128" height="200">
+                <button>Купить сборник стихов</button>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container-footer">
+            <div class="sec aboutus">
+                <h2>Автор сайта</h2>
+                <p>Омельяненко К. Д. ИКБО-20-22</p>
+                <nav class="nav-footer">
+                    <button class="social-button">
+                        <a href="https://www.youtube.com/" target="_blank"><img src="../../assets/yt.png" alt="YouTube" title="YouTube" style="display: block;"></a>
+                    </button> 
+                    <button class="social-button">
+                        <a href="https://https://ru.linkedin.com/" target="_blank"><img src="../../assets/vk.png" alt="in" title="in" style="display: block;"></a>
+                    </button> 
+                    <button class="social-button">
+                        <a href="https://web.telegram.org/k/" target="_blank"><img src="../../assets/tg.png" alt="Telegram" title="Telegram" style="display: block;"></a>
+                    </button> 
+                </nav>
+            </div>
+            <div class="sec quicklinks">
+                <h2>Быстрые ссылки</h2>
+                <ul>
+                    <li><a href="../../index.html">Главная</a></li>
+                    <li><a href="../../pages/about">О нас</a></li>
+                    <li><a href="../../pages/basket">Корзина</a></li>
+                    <li><a href="../../pages/auth">Вход</a></li>
+                </ul>
+            </div>
+            <div class="sec quicklinks">
+                <h2>Поэты</h2>
+                <ul>
+                    <li><a href="../poets/esenin">Есенин</a></li>
+                    <li><a href="../poets/akhmatova">Ахматова</a></li>
+                    <li><a href="../poets/mayakovsky">Маяковский</a></li>
+                </ul>
+            </div>
+            <div class="sec contact">
+                <h2>Связаться с нами</h2>
+                <ul class="info">
+                    <li>
+                        <img width="32" height="32" src="../../assets/location.svg">
+                        <p>Москва, Мичуринский пр-кт, 12к2</p>
+                    <li> 
+                        <img width="32" height="32" src="../../assets/phone.svg">
+                        <a href="tel:+79876543210">+7 (987) 654-32-10</a>
+                    </li>
+                    <li>
+                        <img width="32" height="32" src="../../assets/mail.svg">
+                        <a href="mailto:example@email.com">example@email.com</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyrightText">
+            <p>Copyright © 2023 MIREA All Rights Reserved</p>
+        </div>
+    </footer>
+</body>
+</html>
